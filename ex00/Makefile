@@ -1,9 +1,9 @@
-NAME = ex00
+NAME = convert
 CC = c++
 CFLAGS = -std=c++98 -Wall -Wextra -Werror
 
 SRCS = main.cpp\
-		Bureaucrat.cpp\
+		ScalarConverter.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
 

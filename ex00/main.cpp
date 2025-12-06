@@ -1,11 +1,10 @@
-#include <iostream>
+#include "ScalarConverter.hpp"
 
-int main(int argc, char *argv) {
+int main(int argc, char **argv) {
   if (argc != 2) {
-    std::cout << "the number of argument is not correct" << std::endl;
+    std::cerr << "The number of argument shall be 2\n";
     return 1;
   }
-  
-
+  ScalarConverter::convert(argv[1]);
   return 0;
 }
