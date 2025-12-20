@@ -1,5 +1,14 @@
 #include "ScalarConverter.hpp"
 
+ScalarConverter::ScalarConverter(){};
+ScalarConverter::ScalarConverter(const ScalarConverter &other){
+	*this = other;
+};
+ScalarConverter &ScalarConverter::operator=(ScalarConverter const &){
+	return *this;
+};
+ScalarConverter::~ScalarConverter(){};
+
 static bool isCharLiteral(const std::string &s) {
   return s.length() == 3 && s[0] == '\'' && s[2] == '\'';
 }

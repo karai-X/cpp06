@@ -16,7 +16,7 @@ public:
 
 private:
   ScalarConverter();
-  ScalarConverter(ScalarConverter const &);
+  ScalarConverter(const ScalarConverter &other);
   ScalarConverter &operator=(ScalarConverter const &);
   ~ScalarConverter();
 };
