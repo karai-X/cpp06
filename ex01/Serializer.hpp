@@ -11,6 +11,10 @@ struct Data {
 
 class Serializer {
 private:
+  Serializer();
+  Serializer(const Serializer &other);
+  Serializer &operator=(Serializer const &);
+  ~Serializer();
 
 public:
   static uintptr_t serialize(Data *ptr);
